@@ -18,7 +18,6 @@ std::vector<std::string> Tokenizer::parseExpression(const std::string& expr) {
         pos += 3;
     }
     
-    // Токенизация
     std::vector<std::string> tokens;
     std::sregex_iterator it(processed.begin(), processed.end(), pattern);
     std::sregex_iterator end;

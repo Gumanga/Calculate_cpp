@@ -79,8 +79,7 @@ double Evaluator::evaluateRPN(const std::vector<std::string>& rpn) {
         }},
         {"^", [](double a, double b) { return std::pow(a, b); }},
     };
-    
-    // Функции для работы с памятью
+
     std::map<std::string, std::function<double()>> memoryFunctions = {
         {"MR", []() { return memory; }},
         {"MC", []() { memory = 0.0; return memory; }}
